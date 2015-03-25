@@ -1,0 +1,7 @@
+<h2><%= @poem.title.titlecase %></h2>
+
+<h2><%= @poem.author.titlecase %></h2>
+
+<%= simple_format (@poem.body) %>
+
+<h3>Source: <%= link_to(@poem.source) %></h3>

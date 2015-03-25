@@ -1,0 +1,8 @@
+<% @poems.each do |poem|
+  poem_join = poem.title.titlecase + " - " + poem.author.titlecase %>
+
+  <h2><%= link_to poem.title, poem_path(poem) %></h2>
+
+  <p>By: <i><%= poem.author.titleize %></i></p>
+
+  <% end %>

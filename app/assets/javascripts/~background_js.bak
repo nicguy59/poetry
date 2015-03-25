@@ -1,0 +1,11 @@
+function bckgrdImage() {  //This loads a random background image to the current page from the background folder
+	//alert("Inside Background Image function")
+    document.body.style.backgroundColor = "#BBCCED";  //Set the page background color
+	var bckgrnds = ['flowers1','flowers2','shatter1', 'shatter2', 'splash1', 'splash2'];
+	var bckgrnd = Math.floor(Math.random() * bckgrnds.length);	//select a random number using the bckgrnds array
+	var bckgrnd_image = bckgrnds[bckgrnd];  					//get the image name from the array
+	//alert("Background Image is: " + bckgrnd_image);
+    document.body.style.backgroundImage = 'url("assets/' + bckgrnd_image + '.png")'; //put the background image on the page
+}
+
+bckgrdImage();
